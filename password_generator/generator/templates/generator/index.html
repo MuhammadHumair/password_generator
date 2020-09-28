@@ -11,7 +11,6 @@
         <form action="{% url 'password' %}">
             Select Password Length:
             <select name="length">
-                <option value="0">Select</option>
                 <option value="1">1</option>
                 <option value="2">2</option>
                 <option value="3">3</option>
@@ -19,16 +18,21 @@
                 <option value="5">5</option>
                 <option value="6">6</option>
                 <option value="7">7</option>
-                <option value="8">8</option>
+                <option value="8" selected="selected">8</option>
                 <option value="9">9</option>
                 <option value="10">10</option>
+                <option value="11">11</option>
+                <option value="12">12</option>
+                <option value="13">13</option>
+                <option value="14">14</option>
+                <option value="15">15</option>
             </select>
             <br /><br />
             <input type="checkbox" name="uppercase" />Uppercase
             <br /><br />
-            <input type="checkbox" name="lowercase" />Lowercase
+            <input type="checkbox" name="numbers" />Numbers
             <br /><br />
-            <input type="checkbox" name="specialcharacters" />Special Characters
+            <input type="checkbox" name="special" />Special Characters
             <br /><br />
             <input type="submit" value="Generate Password" />
         </form>
